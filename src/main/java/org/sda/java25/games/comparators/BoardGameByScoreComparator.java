@@ -15,6 +15,6 @@ public class BoardGameByScoreComparator implements Comparator<BoardGame> {
         double score1 = o1.getScore();
         double score2 = o2.getScore();
 
-        return (int)(score1 - score2);
+        return Double.compare(score1, score2);
     }
 }

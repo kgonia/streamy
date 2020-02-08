@@ -14,7 +14,7 @@ public class DataSource {
 
     private DataSource() {
 
-        List<Header> headers = Arrays.asList(new Header("browser", "Chrome"), new Header("accept", "JSON"));
+        List<Header> headers = Arrays.asList(new Header("browser", "Chrome"), new Header("accept", "JSON"), new Header("xfv", "XML"));
         Request request = new Request(123, "/login", null, "GET", headers);
 
         requests.add(request);

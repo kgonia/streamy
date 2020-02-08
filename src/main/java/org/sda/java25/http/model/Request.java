@@ -23,6 +23,26 @@ public class Request {
 
     private String type;
 
+    public int getSize() {
+        return size;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public String getPayload() {
+        return payload;
+    }
+
+    public List<Header> getHeaders() {
+        return headers;
+    }
+
+    public String getType() {
+        return type;
+    }
+
     @Override
     public String toString() {
         return "Request{" +
